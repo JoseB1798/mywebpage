@@ -1,93 +1,109 @@
-#<!DOCTYPE html>
-<html lang="en-US">
+<!DOCTYPE html> 
+<html lang= "en"> 
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello HTML!</title>
-    <link rel="stylesheet" href="./assets/style.css">
-  </head>
+<head> 
+   <meta charset="UTF-8" />
+   <!-- viewport: Ensures that when I resize the page or view the site on various screens and devices
+        then I am presented with a responsive layout that adapts to my viewport-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio</title>
+   <link rel="stylesheet" href="./assets/style.css"> 
+</head>
 
- <body>
-    
-    <header>
-        <h1>Jose Benicio</h1>
-        <nav>
-          <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact Me</a></li>
-            <li><a href="#">Resume</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-    
-     
-        <head>
-           
-           <p> My name is Jose Benicio, I am 22 years old living in Kent,Washington. I graduated Highschool in 2016 and completed 2 years of college. I have 3 years of experience in the restaurant industry. I am a beginner in software developing and I am looking foward to grow my knowledge, so I can apply my skills into the real world </p>
-          
-        </head>
-    
-      </main>
-      <div class="row">
-        <div class= "column">
-        
-          
-        
-          <img src="./assets/pexels-josh-sorenson-1714208 (1).jpg" alt="setup" style= "width:100%"/>
-          </div> 
-          <div class="centered"> coming soon</div>
-        
-    
-          <div class= "column">
-          <img src="./assets/pexels-negative-space-160107.jpg" alt="sci" style= "width:100%"/>
+<div class="wrapper">
+<!-- Navigation bar:: Includes developer's name and a link to each section on the page -->
+<div class="box header" id="background">
+    <h1>Jose Benicio</h1>
+    <nav>
+        <ul>  
+            <a href= "#AboutMe_Section"> About Me </a>
+            <a href= "#Work_Section"> Work </a>
+            <a href= "#ContactMe_Section"> Contact Me </a>
+        </ul>
+    </nav>
+</div>
+<!--Side bar:: titles each section on the left-side of the page -->
+<div class="box sidebar" id="AboutMe_Section">
+    <div>
+        <h1 id="section_title">About Me</h1>
+    </div> 
+</div>
+<div class="box sidebar1" id="Work_Section">
+    <div>
+        <h1 id="section_title">Work</h1>
+    </div> 
+</div>
+<!--About Me:: a section that contains a description about the developer's
+page and an image of the developer. -->
+<div class="box content">
+    <br/> 
+    <img src= "./assets/pexels-picjumbocom-196644 (1).jpg" alt= "Portfolio Picture" class="right">
+    <article id="aboutMe_content">
+        Welcome to my portfolio page. 
+        Hello, my name is Jose and I'm an aspiring software developer.
+        Below you will find some of my projects under the section titled "work".
+         At the bottom, you will find my contact information. The section 
+        includes a email pop-up, a github repository link, and my LinkedIn page. I hope you enjoy my website 
+        as much as I had developing it.  
+        <br/> <br/>
+        The projects displayed below include projects focused on web development.
+    </article>
+</div>
+<!--Work:: a section of the page that includes the developer's projects. 
+       Each deployed application project can be accessed by clicking its titled image. -->
+<div class="box content1">
+<article id="work_content">
+        <!--Largest image in work section to adhere to requirements -->
+        <div class="img_top">
+            <a href="https://github.com/JoseB1798" target="_blank">
+                    <img class= "img_topImg" alt= "Work1 Image"> 
+                    <h2 class="text_box">Repository</h2> 
+            </a>
         </div>
-        <div class="centered"> coming soon</div>
-        
-          <div class= "column">
-          <img src="./assets/pexels-picjumbocom-196644 (1).jpg" alt="css" style= "width:100%" />
+        <div class="imgLeft_position">
+            <a href="https://joseb1798.github.io/scheduleplanner/"  target="_blank">
+                <img class= "img_bottomImg" src= "./assets/pexels-josh-sorenson-1714208 (1).jpg" alt= "Work2 Image">
+                <h2 class= "text_box1">Day Planner</h2>
+            </a>
+        </div> 
+        <div class="imgRight_position">
+            <a href="https://joseb1798.github.io/weather/" target="_blank"> 
+                    <img class= "img_bottomImg" src= "./assets/pexels-negative-space-160107.jpg" alt= "Work2 Image">
+                    <h2 class="text_box1">Weather Dashboard</h2>
+            </a>
+        </div> 
+        <div class="imgRight_position">
+            <a href="https://ksapir.github.io/recipe-finder/" target="_blank">
+                <img class= "img_bottomImg" src= "assets/pexels-picjumbocom-196644 (1).jpg"alt= "Work3 Image">
+                <h2 class="text_box1"> Recipe selector</h2>
+            </a>
         </div>
-        <div class="centered"> coming soon</div>
+        <div class="imgLeft_position">
+            <a href="https://github.com/csbonang/Code_Refactor-" target="_blank">
+                <img class= "img_bottomImg" src= "./assets/pexels-pixabay-270404.jpg" alt= "Work3 Image">
+                <h2 class ="text_box1">Java quiz</h2>
+            </a>
+        </div> 
         
-          <div class= "column">
-          <img src="./assets/pexels-pixabay-270404.jpg" alt="pexels" style= "width:100%" /> 
-        
-        </div>
-
-
-      </div>
-        </section>
-      
-    </main>
-
-
-      
-      
-
-             r<footer class="links">
-        
-            
-            <a href=https://www.josebenicio24@gmail.com/ target="_blank">Email</a>
-            <a href=https://github.com/JoseB1798/ target= "_blank">GitHub</a>
-            <a>253-397-5334</a>
-            <a href=https://www.facebook.com/jose.benicio.1/ target="_blank">Facebook</a>
-          
-
-             </footer>
-    
-     
-
-      
-
-    </main>
-
-
- </body>
-
-
-
-
-
-
-</html>
+</article>
+</div>
+<!-- Contact Me:: Includes information to contact the developer -->
+<div class="box footer" id="ContactMe_Section" >
+<div>
+    <h1 id="section_title">Contact Me</h1>
+</div> 
+</div>
+<div class="box footer_content">
+<p> 
+    <a id="contactMe_info" href = "mailto:josebenicio24@gmail.com?subject = Feedback&body = Message" alt=Email>
+        Email Me
+    </a>
+    <a id= "contactMe_info"href = "https://github.com/JoseB1798"alt= GitHub>
+        GitHub 
+    </a>
+    <a id= "contactMe_info"href = "https://www.linkedin.com/in/jose-benicio-8a35b4217/"alt= LinkedIn>
+        LinkedIn
+    </a>
+</p>
+</div>
+</div>
